@@ -82,7 +82,7 @@ public class InfoListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
 
     private final LayoutInflater layoutInflater;
     private final InfoItemBuilder infoItemBuilder;
-    private final List<InfoItem> infoItemList;
+    private List<InfoItem> infoItemList;
     private final HistoryRecordManager recordManager;
 
     private boolean useMiniVariant = false;
@@ -152,6 +152,11 @@ public class InfoListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
                         + " to " + footerNow);
             }
         }
+    }
+
+    public void replaceInfoItemList(@NonNull final ArrayList<InfoItem> data) {
+        infoItemList = data;
+        notifyDataSetChanged();
     }
 
     public void clearStreamItemList() {

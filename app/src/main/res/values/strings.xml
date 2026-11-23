@@ -844,6 +844,8 @@
     <string name="channel_tab_videos">Videos</string>
     <string name="channel_tab_tracks">Tracks</string>
     <string name="channel_tab_shorts">Shorts</string>
+    <string name="channel_tab_sort_by">Sort by: %s</string>
+    <string name="channel_tab_sort_label">Sort by</string>
     <string name="channel_tab_livestreams">Live</string>
     <string name="channel_tab_channels">Channels</string>
     <string name="channel_tab_playlists">Playlists</string>
